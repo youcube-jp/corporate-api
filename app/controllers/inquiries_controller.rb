@@ -8,7 +8,7 @@ class InquiriesController < ApplicationController
       NotificationMailer.new_inquiry(@inquiry).deliver!
       render json: { status: 'CREATED' }, status: :created
     else
-      render json: { status: 'UNPROCESSABLE_ENTITY', errors: @inquiry.errors }, status: :unprocessable_entity
+      render json: { status: 'UNPROCESSABLE_ENTITY', errors: @inquiry.errors.to_h }, status: :unprocessable_entity
     end
   end
 
