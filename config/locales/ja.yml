@@ -109,7 +109,7 @@ ja:
       greater_than: '%{count}より大きい値を入力してください'
       greater_than_or_equal_to: '%{count}以上の値を入力してください'
       inclusion: 不正な値です
-      invalid: 不正な値です
+      invalid: 正しく入力してください
       less_than: '%{count}より小さい値を入力してください'
       less_than_or_equal_to: '%{count}以下の値を入力してください'
       not_a_number: 数値で入力してください
