@@ -5,7 +5,7 @@ class Inquiry < ActiveRecord::Base
   before_validation :ensure_hankaku
   validates :name, presence: true, length: { maximum: 256 }
   validates :email, length: { maximum: 256 }, format: { with: /@/ }, allow_blank: true
-  validates :phone, length: { maximum: 32 }, format: { with: /\A[0-9\+\-\(\)]+\z/ }, allow_blank: true
+  validates :phone, length: { maximum: 32 }, format: { with: /\A[0-9 \+\-\(\)]+\z/ }, allow_blank: true
   validates :message, presence: true, length: { maximum: 4096 }
   validate :ensure_email_or_phone
 
