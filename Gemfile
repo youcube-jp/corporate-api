@@ -39,6 +39,9 @@ group :staging, :production do
   # Database
   gem 'pg'
 
+  # Javascript Runtime
+  gem 'therubyracer'
+
   # AP Server
   gem 'unicorn'
 end
