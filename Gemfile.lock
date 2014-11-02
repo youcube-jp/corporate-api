@@ -114,6 +114,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.3.2)
+    rspec-collection_matchers (1.0.0)
+      rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.1.7)
       rspec-support (~> 3.1.0)
     rspec-expectations (3.1.2)
@@ -181,6 +183,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   rails (= 4.1.6)
+  rspec-collection_matchers
   rspec-kickstarter
   rspec-rails
   sass-rails
