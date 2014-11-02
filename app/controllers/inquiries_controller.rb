@@ -1,6 +1,7 @@
 class InquiriesController < ApplicationController
   # POST /inquiries
   def create
+    response.headers['Access-Control-Allow-Origin'] = 'http://localhost:4567'
     @inquiry = Inquiry.new(inquiry_params)
 
     if @inquiry.save
