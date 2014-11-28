@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :inquiries
-
   scope '/api/1' do
-    resources :inquiries
+    # Inquiry API
+    resources :inquiries, only: :create
   end
 end
