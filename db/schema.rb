@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101032700) do
+ActiveRecord::Schema.define(version: 20141128125825) do
+
+  create_table "copies", force: true do |t|
+    t.text     "copy"
+    t.string   "dest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "inquiries", force: true do |t|
     t.string   "name"
